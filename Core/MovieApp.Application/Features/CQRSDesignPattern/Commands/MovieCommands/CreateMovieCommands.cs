@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Domain.Entities
+namespace MovieApp.Application.Features.CQRSDesignPattern.Commands.MovieCommands
 {
-    public class Movie
+    public class CreateMovieCommands
     {
-       
-        public int MoiveID { get; set; }
+        
         public string Title { get; set; }
         public string CoverImageurl { get; set; }
         public decimal Rating { get; set; }

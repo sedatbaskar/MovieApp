@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieApi.Domain.Entities
+namespace MovieApp.Application.Features.Results.MovieResults
 {
-    public class Movie
+    public class GetMovieQueryResults
     {
-       
         public int MoiveID { get; set; }
         public string Title { get; set; }
         public string CoverImageurl { get; set; }
