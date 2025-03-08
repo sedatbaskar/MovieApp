@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieApp.Application.Features.Handlers.CategoryHandlers
 {
-    class CreateCategoryCommandHandler
+  public  class CreateCategoryCommandHandler
     {
         private readonly MovieContext _context;
 
@@ -18,7 +18,7 @@ namespace MovieApp.Application.Features.Handlers.CategoryHandlers
             _context = context;
         }
 
-        public async void Handle(CreateCategoryCommand command)
+        public async Task Handle(CreateCategoryCommand command)
         {
             _context.Categories.Add(new Category
             {

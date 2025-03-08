@@ -20,7 +20,7 @@ namespace MovieApp.Application.Features.Handlers.MovieHandlers
             _contex = contex;
         }
 
-        public async void Handle(CreateMovieCommands commands)
+        public async Task Handle(CreateMovieCommands commands)
         {
             _contex.Movies.Add(new Movie
             {

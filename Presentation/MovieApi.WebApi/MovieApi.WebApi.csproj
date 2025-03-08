@@ -21,10 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MovieApp.Application\MovieApp.Application.csproj" />
     <ProjectReference Include="..\..\Infrastructure\MoiveApi.Persistence\MoiveApi.Persistence.csproj" />
   </ItemGroup>
 
