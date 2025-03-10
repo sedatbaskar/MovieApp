@@ -17,7 +17,7 @@ namespace MovieApp.Application.Features.Handlers.MovieHandlers
         {
             _context = context;
         }
-        public async void Handler(UpdateMovieCommands commands)
+        public async Task Handle(UpdateMovieCommands commands)
         {
             var value = await _context.Movies.FindAsync(commands.MoiveID);
             value.Status = commands.Status;

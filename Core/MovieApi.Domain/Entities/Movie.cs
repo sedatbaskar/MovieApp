@@ -9,7 +9,8 @@ namespace MovieApi.Domain.Entities
 {
     public class Movie
     {
-       
+
+        [Key]
         public int MoiveID { get; set; }
         public string Title { get; set; }
         public string CoverImageurl { get; set; }
