@@ -18,7 +18,7 @@ namespace MovieApp.Application.Features.Handlers.MovieHandlers
         {
             _context = context;
         }
-        public async void Handle(RemoveMovieCommands command)
+        public async Task Handle(RemoveMovieCommands command)
         {
             var value = await _context.Movies.FindAsync(command.MoiveID);
             _context.Movies.Remove(value);

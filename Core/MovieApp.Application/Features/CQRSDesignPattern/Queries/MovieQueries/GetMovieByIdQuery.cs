@@ -8,6 +8,11 @@ namespace MovieApp.Application.Features.CQRSDesignPattern.Queries.MovieQueries
 {
    public class GetMovieByIdQuery
     {
+        public GetMovieByIdQuery(int moiveID)
+        {
+            MoiveID = moiveID;
+        }
+
         public int MoiveID { get; set; }
     }
 }
